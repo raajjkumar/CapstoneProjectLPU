@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="src/jquery.facedetection.js"></script> 
+<script src="src/ccv.js"></script> 
+<script src="src/cascade.js"></script> 
+<script src="face-api.js"></script>
+<style type="text/css">
+  .video-container {
+            position: relative;
+            width: 260px;
+            height: auto;
+            margin: 20px auto;
+            border: 10px solid #fff;
+            box-shadow: 0 5px 5px #000;
+        }
+            .video {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+        #face {
+            position: absolute;
+            border: 2px solid #FFF;
+            left:560px;
+            top:200px;
+            width:280px;
+            height: 320px;
+            color: white;
+        }
+        .face {
+            position: absolute;
+            border: 2px solid #FFF;
+          
+        }
+         #emo {
+            position: absolute;
+            left:560px;
+            top:530px;
+            font-size: 45px;
+            font-style: bold;
+            color: red;
+        }
+</style>
+</head>
+<body>
+<div class="video-wrap">
+    <video id="video" playsinline autoplay></video>
+
+</div>
+
+<!-- Trigger canvas web API -->
+<div class="controller">
+    <button id="snap">Capture</button>
+</div>
+
+<div id="face">
+</div>
+<div id="emo">
+  Loading
+</div>
+<!-- Webcam video snapshot -->
+<canvas id="canvas" width="640" height="480"></canvas  >
+
+<script src="index.js"></script>
+
+
+
+
+</body>
+</html>
