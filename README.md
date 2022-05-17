@@ -1,2 +1,3 @@
-# CapstoneProjectLPU
-This is our capstone project
+# CapstoneProject-KC2059
+Expressica-A facial expressions based recommendation system
+
